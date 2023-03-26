@@ -1,6 +1,6 @@
 name: orange_tflite_flutter_helper
 description: A new Flutter plugin project.
-version: 0.0.4
+version: 0.0.5
 homepage:
 
 environment:
@@ -25,7 +25,7 @@ dependencies:
   orange_tflite_flutter:
     git:
       url: https://github.com/faizin4107/orange_tflite_flutter.git
-      ref: 0.0.2
+      ref: 0.0.3
 
 dev_dependencies:
   flutter_test:

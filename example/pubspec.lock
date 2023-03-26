@@ -167,18 +167,18 @@ packages:
     dependency: transitive
     description:
       path: "."
-      ref: "0.0.2"
-      resolved-ref: "919d9058c5d50361872dd9f100625f0642b53fde"
+      ref: "0.0.3"
+      resolved-ref: c2ca4f15b50be0a15266ee6c2ff1585b5364671e
       url: "https://github.com/faizin4107/orange_tflite_flutter.git"
     source: git
-    version: "0.0.1"
+    version: "0.0.3"
   orange_tflite_flutter_helper:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.0.4"
+    version: "0.0.5"
   path:
     dependency: transitive
     description:
