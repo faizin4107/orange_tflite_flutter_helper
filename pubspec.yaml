@@ -1,6 +1,6 @@
 name: orange_tflite_flutter_helper
 description: A new Flutter plugin project.
-version: 0.0.3
+version: 0.0.4
 homepage:
 
 environment:
@@ -19,13 +19,13 @@ dependencies:
   # yjy_tflite_flutter: ^0.8.0
   
   tuple: ^2.0.1
-  camera: ^0.10.3+2
+  # camera: ^0.10.3+2
   ffi: ^2.0.1
   image: ^3.2.0
   orange_tflite_flutter:
     git:
       url: https://github.com/faizin4107/orange_tflite_flutter.git
-      ref: 0.0.1
+      ref: 0.0.2
 
 dev_dependencies:
   flutter_test:

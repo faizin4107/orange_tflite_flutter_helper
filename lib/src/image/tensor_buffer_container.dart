@@ -1,4 +1,4 @@
-import 'package:camera/camera.dart';
+// import 'package:camera/camera.dart';
 import 'package:image/image.dart';
 import 'package:quiver/check.dart';
 // import 'package:tflite_flutter/tflite_flutter.dart';
@@ -87,11 +87,11 @@ class TensorBufferContainer implements BaseImageContainer {
         : TensorBuffer.createFrom(_buffer, dataType);
   }
 
-  @override
-  CameraImage get mediaImage {
-    throw UnsupportedError(
-        "Converting from TensorBuffer to android.media.Image is unsupported.");
-  }
+  // @override
+  // CameraImage get mediaImage {
+  //   throw UnsupportedError(
+  //       "Converting from TensorBuffer to android.media.Image is unsupported.");
+  // }
 
   @override
   int get width {

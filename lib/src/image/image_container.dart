@@ -1,4 +1,4 @@
-import 'package:camera/camera.dart';
+// import 'package:camera/camera.dart';
 import 'package:image/image.dart';
 // import 'package:tflite_flutter/tflite_flutter.dart';
 import 'package:orange_tflite_flutter_helper/src/image/base_image_container.dart';
@@ -54,9 +54,9 @@ class ImageContainer extends BaseImageContainer {
   @override
   Image get image => _image;
 
-  @override
-  CameraImage get mediaImage => throw UnsupportedError(
-      'Converting from Image to CameraImage is unsupported');
+  // @override
+  // CameraImage get mediaImage => throw UnsupportedError(
+  //     'Converting from Image to CameraImage is unsupported');
 
   @override
   int get width => _image.width;

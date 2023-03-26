@@ -1,4 +1,4 @@
-import 'package:camera/camera.dart';
+// import 'package:camera/camera.dart';
 import 'package:image/image.dart';
 // import 'package:tflite_flutter/tflite_flutter.dart';
 import 'package:orange_tflite_flutter_helper/src/image/color_space_type.dart';
@@ -24,7 +24,7 @@ abstract class BaseImageContainer {
   TensorBuffer getTensorBuffer(TfLiteType dataType);
 
   /// Gets the {@link Image} representation of the underlying image format. */
-  CameraImage get mediaImage;
+  // CameraImage get mediaImage;
 
   /// Returns the color space type of the image. */
   ColorSpaceType get colorSpaceType;

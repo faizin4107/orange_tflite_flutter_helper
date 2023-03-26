@@ -1,10 +1,10 @@
 import Flutter
 import UIKit
 
-public class OrangeTfliteFlutterHelperPlugin: NSObject, FlutterPlugin {
+public class SwiftOrangeTfliteFlutterHelperPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "orange_tflite_flutter_helper", binaryMessenger: registrar.messenger())
-    let instance = OrangeTfliteFlutterHelperPlugin()
+    let instance = SwiftOrangeTfliteFlutterHelperPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
