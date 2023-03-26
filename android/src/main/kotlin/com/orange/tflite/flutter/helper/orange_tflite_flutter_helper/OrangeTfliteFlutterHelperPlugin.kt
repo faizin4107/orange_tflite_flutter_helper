@@ -37,16 +37,16 @@ enum class SoundStreamStatus {
 	Stopped,
 }
 
-const val METHOD_CHANNEL_NAME = "com.tfliteflutter.tflite_flutter_helper:methods"
+const val METHOD_CHANNEL_NAME = "com.orange.tflite.flutter.helper.orange_tflite_flutter_helper:methods"
 
-/** TfliteFlutterHelperPlugin */
-class TfliteFlutterHelperPlugin : FlutterPlugin,
+/** OrangeTfliteFlutterHelperPlugin */
+class OrangeTfliteFlutterHelperPlugin : FlutterPlugin,
 		MethodCallHandler,
 		PluginRegistry.RequestPermissionsResultListener,
 		ActivityAware {
 
 
-	private val LOG_TAG = "TfLiteFlutterHelperPlugin"
+	private val LOG_TAG = "OrangeTfliteFlutterHelperPlugin"
 	private val AUDIO_RECORD_PERMISSION_CODE = 14887
 	private val DEFAULT_SAMPLE_RATE = 16000
 	private val DEFAULT_BUFFER_SIZE = 8192
