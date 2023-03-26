@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter/services.dart';
+// import 'package:flutter/services.dart';
 import 'package:orange_tflite_flutter_helper/orange_tflite_flutter_helper.dart';
 
 void main() {
@@ -17,6 +17,8 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
+  late TensorImage _inputImage;
+  late TensorBuffer _outputBuffer;
   // final _orangeTfliteFlutterHelperPlugin = OrangeTfliteFlutterHelper();
 
   // @override

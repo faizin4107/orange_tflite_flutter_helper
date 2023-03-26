@@ -1,11 +1,13 @@
 name: orange_tflite_flutter_helper
 description: A new Flutter plugin project.
-version: 0.0.2
+version: 0.0.3
 homepage:
 
 environment:
   sdk: '>=2.19.3 <3.0.0'
   flutter: ">=2.5.0"
+
+publish_to: none
 
 dependencies:
   flutter:
@@ -20,15 +22,16 @@ dependencies:
   camera: ^0.10.3+2
   ffi: ^2.0.1
   image: ^3.2.0
+  orange_tflite_flutter:
+    git:
+      url: https://github.com/faizin4107/orange_tflite_flutter.git
+      ref: 0.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-  orange_tflite_flutter:
-    git:
-      url: https://github.com/faizin4107/orange_tflite_flutter.git
-      ref: 0.0.1
+  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
