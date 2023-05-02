@@ -30,14 +30,22 @@ class LabelUtil {
     print("values: $values");
 
     List<String> result = [];
-    values.forEach((v) {
+    // values.forEach((v) {
+    //   int index = v + offset;
+    //   if (index < 0 || index >= labels.length) {
+    //     result.add("");
+    //   } else {
+    //     result.add(labels.elementAt(index));
+    //   }
+    // });
+    for (var v in values) {
       int index = v + offset;
       if (index < 0 || index >= labels.length) {
         result.add("");
       } else {
         result.add(labels.elementAt(index));
       }
-    });
+    }
 
     return result;
   }

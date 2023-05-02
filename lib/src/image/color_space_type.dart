@@ -161,7 +161,9 @@ class _RGB extends ColorSpaceType {
   static const int CHANNEL_VALUE = 3;
 
   Image convertTensorBufferToImage(TensorBuffer buffer) {
+    // convertTensorBufferToImage(buffer)
     return ImageConversions.convertRgbTensorBufferToImage(buffer);
+    // return convertTensorBufferToImage(buffer);
   }
 
   int getChannelValue() {
@@ -201,6 +203,7 @@ class _GRAYSCALE extends ColorSpaceType {
   const _GRAYSCALE() : super(1);
 
   Image convertTensorBufferToImage(TensorBuffer buffer) {
+    // ImageConversions.convertGrayscaleTensorBufferToImage(buffer);
     return ImageConversions.convertGrayscaleTensorBufferToImage(buffer);
   }
 

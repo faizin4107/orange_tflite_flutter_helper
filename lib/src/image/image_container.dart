@@ -26,10 +26,10 @@ class ImageContainer extends BaseImageContainer {
 
   @override
   ColorSpaceType get colorSpaceType {
-    int len = _image.data.length;
+    int len = _image.data!.length;
     bool isGrayscale = true;
-    for (int i = (len / 4).floor(); i < _image.data.length; i++) {
-      if (_image.data[i] != 0) {
+    for (int i = (len / 4).floor(); i < _image.data!.length; i++) {
+      if (_image.data!.first[i] != 0) {
         isGrayscale = false;
         break;
       }

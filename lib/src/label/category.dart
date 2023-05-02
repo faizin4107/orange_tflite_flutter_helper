@@ -3,8 +3,8 @@ import 'package:quiver/core.dart';
 /// Category is a util class, contains a label and a float value. Typically it's used as result of
 /// classification tasks.
 class Category {
-  String _label;
-  double _score;
+  final String _label;
+  final double _score;
 
   /// Constructs a Category.
   Category(this._label, this._score);
@@ -30,10 +30,6 @@ class Category {
 
   @override
   String toString() {
-    return "<Category \"" +
-        label +
-        "\" (score=" +
-        score.toStringAsFixed(3) +
-        ")>";
+    return "<Category \"$label\" (score=${score.toStringAsFixed(3)})>";
   }
 }

@@ -21,7 +21,8 @@ dependencies:
   tuple: ^2.0.1
   # camera: ^0.10.3+2
   ffi: ^2.0.1
-  image: ^3.2.0
+  # image: ^3.2.0
+  image: ^4.0.15
   orange_tflite_flutter:
     git:
       url: https://github.com/faizin4107/orange_tflite_flutter.git
