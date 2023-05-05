@@ -12,7 +12,7 @@ class ImageContainer extends BaseImageContainer {
   late final Image _image;
 
   ImageContainer._(Image image) {
-    this._image = image;
+    _image = image;
   }
 
   static ImageContainer create(Image image) {
@@ -29,7 +29,7 @@ class ImageContainer extends BaseImageContainer {
     int len = _image.data!.length;
     bool isGrayscale = true;
     for (int i = (len / 4).floor(); i < _image.data!.length; i++) {
-      if (_image.data!.first[i] != 0) {
+      if (_image.data!.buffer.asUint32List().isNotEmpty) {
         isGrayscale = false;
         break;
       }

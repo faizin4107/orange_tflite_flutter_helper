@@ -26,7 +26,7 @@ class ImageConversions {
       int g = rgbValues[j++];
       int b = rgbValues[j++];
       int a = rgbValues[j++];
-      image.setPixelRgba(wi, hi, r, g, b, a);
+      image.setPixelRgba(wi, hi, r, g, b, 0xff);
       wi++;
       if (wi % w == 0) {
         wi = 0;
@@ -44,15 +44,16 @@ class ImageConversions {
         : TensorBuffer.createFrom(buffer, TfLiteType.uint8);
 
     final shape = uint8Buffer.getShape();
-    final grayscale = ColorSpaceType.GRAYSCALE;
+    const grayscale = ColorSpaceType.GRAYSCALE;
+    // uint8Buffer.buffer
     grayscale.assertShape(shape);
 
     final image = Image.fromBytes(
         width: grayscale.getWidth(shape),
         height: grayscale.getHeight(shape),
-        bytes: uint8Buffer.getBuffer(),
+        bytes: uint8Buffer.buffer,
         format: Format.uint8);
-
+    
     return image;
   }
 
